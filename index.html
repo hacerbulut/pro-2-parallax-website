@@ -9,6 +9,21 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <SCRIPT language=JavaScript>
+        document.oncontextmenu = function(){return false}
+        if(document.layers) 
+        {
+            window.captureEvents(Event.MOUSEDOWN);
+            window.onmousedown = function(e)
+            {
+            if(e.target==document)return false;
+            }
+        }
+        else 
+        {
+            document.onmousedown = function(){return false}
+        }
+    </SCRIPT>
 </head>
 <body>
 
